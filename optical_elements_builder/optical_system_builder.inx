@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>Build System…</name>
+  <id>org.bmrodriguezlara.optical_elements.builder</id>
+  <effect implements-custom-gui="true" show-stderr="true">
+    <object-type>all</object-type>
+    <effects-menu><submenu name="Optical Elements"/></effects-menu>
+    <menu-tip>Drag free-space optical components onto a grid and connect their ports.</menu-tip>
+  </effect>
+  <script><command location="inx" interpreter="python">optical_system_builder.py</command></script>
+</inkscape-extension>

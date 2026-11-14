@@ -1,0 +1,425 @@
+{
+  "laser": {
+    "label": "",
+    "description": "Laser",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "lamp": {
+    "label": "Source",
+    "description": "Broadband source",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "detector": {
+    "label": "",
+    "description": "Photodetector",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "camera": {
+    "label": "Camera",
+    "description": "Camera / CCD / CMOS",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "power_meter": {
+    "label": "PM",
+    "description": "Optical power meter",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "screen": {
+    "label": "Screen",
+    "description": "Viewing screen"
+  },
+  "beam_dump": {
+    "label": "Dump",
+    "description": "Beam dump",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "mirror": {
+    "label": "",
+    "description": "Mirror at 45°",
+    "alignment": {
+      "kind": "mirror",
+      "front_normal": 225
+    }
+  },
+  "mirror_plane": {
+    "label": "",
+    "description": "Plane mirror",
+    "alignment": {
+      "kind": "mirror",
+      "front_normal": 180
+    }
+  },
+  "mirror_concave": {
+    "label": "CM",
+    "description": "Concave mirror",
+    "alignment": {
+      "kind": "mirror",
+      "front_normal": 180
+    }
+  },
+  "mirror_convex": {
+    "label": "Convex M",
+    "description": "Convex mirror",
+    "alignment": {
+      "kind": "mirror",
+      "front_normal": 180
+    }
+  },
+  "mirror_pzt": {
+    "label": "PZT",
+    "description": "Piezo mirror",
+    "alignment": {
+      "kind": "mirror",
+      "front_normal": 225
+    }
+  },
+  "output_coupler": {
+    "label": "OC",
+    "description": "Output coupler",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "cavity_coupler": {
+    "label": "OC",
+    "description": "Partially transmitting mirror; shared surface port for folding or ring cavities.",
+    "alignment": {
+      "kind": "mirror",
+      "front_normal": 180
+    }
+  },
+  "beam_splitter": {
+    "label": "",
+    "description": "Beam splitter · 4 ports",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "beam_splitter_3": {
+    "label": "BS",
+    "description": "Cube beam splitter with three exposed drawing ports; unused fourth channel omitted.",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "plate_splitter": {
+    "label": "BS",
+    "description": "Plate beam splitter · 3 ports",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "dichroic": {
+    "label": "DM",
+    "description": "Dichroic mirror · 3 ports",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "lens": {
+    "label": "",
+    "description": "Converging lens",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "lens_diverging": {
+    "label": "",
+    "description": "Diverging lens",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "lens_plano_convex": {
+    "label": "",
+    "description": "Plano-convex lens",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "lens_plano_concave": {
+    "label": "",
+    "description": "Plano-concave lens",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "lens_meniscus": {
+    "label": "",
+    "description": "Meniscus lens",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "lens_cylindrical": {
+    "label": "Cyl L",
+    "description": "Cylindrical lens",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "lens_aspheric": {
+    "label": "Asph L",
+    "description": "Aspheric lens",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "objective": {
+    "label": "MO",
+    "description": "Microscope objective",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "axicon": {
+    "label": "Axicon",
+    "description": "Axicon",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "polarizer": {
+    "label": "",
+    "description": "Linear polarizer",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "half_wave_plate": {
+    "label": "λ/2",
+    "description": "Half-wave plate",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "quarter_wave_plate": {
+    "label": "λ/4",
+    "description": "Quarter-wave plate",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "variable_retarder": {
+    "label": "LCVR",
+    "description": "Variable retarder",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "pbs": {
+    "label": "PBS",
+    "description": "Polarizing BS · 4 ports",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "pbs_3": {
+    "label": "PBS",
+    "description": "Polarizing BS · 3 ports",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "glan_thompson": {
+    "label": "GT",
+    "description": "Glan–Thompson polarizer",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "wollaston": {
+    "label": "WP",
+    "description": "Wollaston prism"
+  },
+  "faraday_rotator": {
+    "label": "FR",
+    "description": "Faraday rotator",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "isolator": {
+    "label": "ISO",
+    "description": "Optical isolator",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "pinhole": {
+    "label": "PH",
+    "description": "Pinhole",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "iris": {
+    "label": "Iris",
+    "description": "Variable iris",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "slit": {
+    "label": "Slit",
+    "description": "Slit aperture",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "nd_filter": {
+    "label": "ND",
+    "description": "Neutral-density filter",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "bandpass": {
+    "label": "BPF",
+    "description": "Band-pass filter",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "longpass": {
+    "label": "LPF",
+    "description": "Long-pass filter",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "shortpass": {
+    "label": "SPF",
+    "description": "Short-pass filter",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "shutter": {
+    "label": "Shutter",
+    "description": "Mechanical shutter",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "etalon": {
+    "label": "Etalon",
+    "description": "Fabry–Pérot etalon",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "prism": {
+    "label": "Prism",
+    "description": "Dispersive prism"
+  },
+  "right_angle_prism": {
+    "label": "RAP",
+    "description": "Right-angle prism"
+  },
+  "dove_prism": {
+    "label": "Dove",
+    "description": "Dove prism"
+  },
+  "grating": {
+    "label": "DG",
+    "description": "Reflection grating"
+  },
+  "transmission_grating": {
+    "label": "TG",
+    "description": "Transmission grating",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "slm": {
+    "label": "SLM",
+    "description": "Generic modulator block; choose beam paths for the actual reflective or transmissive device.",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "crystal": {
+    "label": "χ⁽²⁾",
+    "description": "Second-order nonlinear crystal",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "crystal_noncollinear": {
+    "label": "χ⁽²⁾",
+    "description": "Noncollinear nonlinear crystal"
+  },
+  "periodically_poled": {
+    "label": "PPLN",
+    "description": "Periodically poled LiNbO₃",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "kerr_medium": {
+    "label": "χ⁽³⁾",
+    "description": "Third-order nonlinear medium",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "gain_medium": {
+    "label": "Gain",
+    "description": "Laser gain medium",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "saturable_absorber": {
+    "label": "SA",
+    "description": "Saturable absorber",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "aom": {
+    "label": "AOM",
+    "description": "Acousto-optic modulator"
+  },
+  "eom": {
+    "label": "EOM",
+    "description": "Electro-optic modulator",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "pockels_cell": {
+    "label": "PC",
+    "description": "Pockels cell",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "phase_modulator": {
+    "label": "PM",
+    "description": "Phase modulator",
+    "alignment": {
+      "kind": "ports"
+    }
+  },
+  "gas_cell": {
+    "label": "Cell",
+    "description": "Gas / vapor cell",
+    "alignment": {
+      "kind": "ports"
+    }
+  }
+}

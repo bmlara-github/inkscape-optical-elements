@@ -1,0 +1,804 @@
+{
+  "fabry_perot": {
+    "title": "Fabry–Pérot cavity",
+    "nodes": [
+      {
+        "key": "output_coupler",
+        "x": -160,
+        "y": 0,
+        "rotation": 0,
+        "label": "M1"
+      },
+      {
+        "key": "output_coupler",
+        "x": 160,
+        "y": 0,
+        "rotation": 0,
+        "label": "M2"
+      }
+    ],
+    "edges": [
+      {
+        "start": 0,
+        "start_port": 1,
+        "end": 1,
+        "end_port": 0,
+        "route": "straight"
+      }
+    ]
+  },
+  "linear_laser": {
+    "title": "Linear laser cavity",
+    "nodes": [
+      {
+        "key": "mirror_concave",
+        "x": -160,
+        "y": 0,
+        "rotation": 180,
+        "label": "HR"
+      },
+      {
+        "key": "gain_medium",
+        "x": 0,
+        "y": 0,
+        "rotation": 0
+      },
+      {
+        "key": "output_coupler",
+        "x": 160,
+        "y": 0,
+        "rotation": 0
+      }
+    ],
+    "edges": [
+      {
+        "start": 0,
+        "start_port": 0,
+        "end": 1,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 1,
+        "start_port": 1,
+        "end": 2,
+        "end_port": 0,
+        "route": "straight"
+      }
+    ]
+  },
+  "ring_cavity": {
+    "title": "Four-mirror ring cavity",
+    "nodes": [
+      {
+        "key": "cavity_coupler",
+        "x": -160,
+        "y": -100,
+        "rotation": 225.0,
+        "label": "OC",
+        "label_offset": [
+          60,
+          60
+        ]
+      },
+      {
+        "key": "mirror_plane",
+        "x": 160,
+        "y": -100,
+        "rotation": 315.0,
+        "label": "M1",
+        "label_offset": [
+          60,
+          60
+        ]
+      },
+      {
+        "key": "mirror_concave",
+        "x": 160,
+        "y": 100,
+        "rotation": 45.0,
+        "label": "M2"
+      },
+      {
+        "key": "mirror_concave",
+        "x": -160,
+        "y": 100,
+        "rotation": 135.0,
+        "label": "M3"
+      }
+    ],
+    "edges": [
+      {
+        "start": 0,
+        "start_port": 0,
+        "end": 1,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 1,
+        "start_port": 0,
+        "end": 2,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 2,
+        "start_port": 0,
+        "end": 3,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 3,
+        "start_port": 0,
+        "end": 0,
+        "end_port": 0,
+        "route": "straight"
+      }
+    ]
+  },
+  "bow_tie": {
+    "title": "Bow-tie cavity",
+    "nodes": [
+      {
+        "key": "cavity_coupler",
+        "x": -160,
+        "y": -100,
+        "rotation": 241.00269160404176,
+        "label": "OC",
+        "label_offset": [
+          60,
+          60
+        ]
+      },
+      {
+        "key": "mirror_plane",
+        "x": 160,
+        "y": 100,
+        "rotation": 61.00269160404174,
+        "label": "M1"
+      },
+      {
+        "key": "mirror_concave",
+        "x": 160,
+        "y": -100,
+        "rotation": 298.99730839595827,
+        "label": "M2",
+        "label_offset": [
+          60,
+          60
+        ]
+      },
+      {
+        "key": "mirror_concave",
+        "x": -160,
+        "y": 100,
+        "rotation": 118.99730839595824,
+        "label": "M3"
+      }
+    ],
+    "edges": [
+      {
+        "start": 0,
+        "start_port": 0,
+        "end": 1,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 1,
+        "start_port": 0,
+        "end": 2,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 2,
+        "start_port": 0,
+        "end": 3,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 3,
+        "start_port": 0,
+        "end": 0,
+        "end_port": 0,
+        "route": "straight"
+      }
+    ]
+  },
+  "michelson": {
+    "title": "Michelson interferometer",
+    "nodes": [
+      {
+        "key": "laser",
+        "x": -240,
+        "y": 20,
+        "rotation": 0
+      },
+      {
+        "key": "beam_splitter",
+        "x": -40,
+        "y": 20,
+        "rotation": 0,
+        "label": "BS",
+        "label_offset": [
+          60,
+          60
+        ]
+      },
+      {
+        "key": "mirror_plane",
+        "x": 240,
+        "y": 20,
+        "rotation": 0,
+        "label": "M1"
+      },
+      {
+        "key": "mirror_plane",
+        "x": -40,
+        "y": -220,
+        "rotation": 270,
+        "label": "M2",
+        "label_offset": [
+          60,
+          60
+        ]
+      },
+      {
+        "key": "detector",
+        "x": -40,
+        "y": 220,
+        "rotation": 90,
+        "label": "PD"
+      }
+    ],
+    "edges": [
+      {
+        "start": 0,
+        "start_port": 0,
+        "end": 1,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 1,
+        "start_port": 1,
+        "end": 2,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 1,
+        "start_port": 2,
+        "end": 3,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 1,
+        "start_port": 3,
+        "end": 4,
+        "end_port": 0,
+        "route": "straight"
+      }
+    ]
+  },
+  "mach_zehnder": {
+    "title": "Mach–Zehnder interferometer",
+    "nodes": [
+      {
+        "key": "laser",
+        "x": -340,
+        "y": 180,
+        "rotation": 0
+      },
+      {
+        "key": "beam_splitter_3",
+        "x": -140,
+        "y": 180,
+        "rotation": 0,
+        "label": "BS1"
+      },
+      {
+        "key": "mirror",
+        "x": 140,
+        "y": 180,
+        "rotation": 0,
+        "label": "M1"
+      },
+      {
+        "key": "mirror",
+        "x": -140,
+        "y": -20,
+        "rotation": 180,
+        "label": "M2",
+        "label_offset": [
+          60,
+          60
+        ]
+      },
+      {
+        "key": "beam_splitter",
+        "x": 140,
+        "y": -20,
+        "rotation": 0,
+        "label": "BS2",
+        "label_offset": [
+          60,
+          60
+        ]
+      },
+      {
+        "key": "detector",
+        "x": 340,
+        "y": -20,
+        "rotation": 0,
+        "label": "PD1"
+      },
+      {
+        "key": "detector",
+        "x": 140,
+        "y": -180,
+        "rotation": 270,
+        "label": "PD2",
+        "label_offset": [
+          60,
+          60
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "start": 0,
+        "start_port": 0,
+        "end": 1,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 1,
+        "start_port": 1,
+        "end": 2,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 1,
+        "start_port": 2,
+        "end": 3,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 2,
+        "start_port": 0,
+        "end": 4,
+        "end_port": 3,
+        "route": "straight"
+      },
+      {
+        "start": 3,
+        "start_port": 0,
+        "end": 4,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 4,
+        "start_port": 1,
+        "end": 5,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 4,
+        "start_port": 2,
+        "end": 6,
+        "end_port": 0,
+        "route": "straight"
+      }
+    ]
+  },
+  "sagnac": {
+    "title": "Sagnac interferometer",
+    "nodes": [
+      {
+        "key": "laser",
+        "x": -260,
+        "y": 0,
+        "rotation": 0
+      },
+      {
+        "key": "beam_splitter",
+        "x": -60,
+        "y": 0,
+        "rotation": 0,
+        "label": "BS",
+        "label_offset": [
+          60,
+          60
+        ]
+      },
+      {
+        "key": "mirror",
+        "x": -60,
+        "y": -200,
+        "rotation": 180,
+        "label": "M1",
+        "label_offset": [
+          60,
+          60
+        ]
+      },
+      {
+        "key": "mirror",
+        "x": 260,
+        "y": -200,
+        "rotation": 90,
+        "label": "M2",
+        "label_offset": [
+          60,
+          60
+        ]
+      },
+      {
+        "key": "mirror",
+        "x": 260,
+        "y": 0,
+        "rotation": 0,
+        "label": "M3"
+      },
+      {
+        "key": "detector",
+        "x": -60,
+        "y": 200,
+        "rotation": 90,
+        "label": "PD"
+      }
+    ],
+    "edges": [
+      {
+        "start": 0,
+        "start_port": 0,
+        "end": 1,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 1,
+        "start_port": 2,
+        "end": 2,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 2,
+        "start_port": 0,
+        "end": 3,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 3,
+        "start_port": 0,
+        "end": 4,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 4,
+        "start_port": 0,
+        "end": 1,
+        "end_port": 1,
+        "route": "straight"
+      },
+      {
+        "start": 1,
+        "start_port": 3,
+        "end": 5,
+        "end_port": 0,
+        "route": "straight"
+      }
+    ]
+  },
+  "shg": {
+    "title": "Second-harmonic generation",
+    "nodes": [
+      {
+        "key": "laser",
+        "x": -420,
+        "y": 100,
+        "rotation": 0,
+        "label": "Pump ω"
+      },
+      {
+        "key": "half_wave_plate",
+        "x": -260,
+        "y": 100,
+        "rotation": 0,
+        "label": "λ/2"
+      },
+      {
+        "key": "lens",
+        "x": -100,
+        "y": 100,
+        "rotation": 0,
+        "label": "L"
+      },
+      {
+        "key": "crystal",
+        "x": 60,
+        "y": 100,
+        "rotation": 0,
+        "label": "χ⁽²⁾"
+      },
+      {
+        "key": "dichroic",
+        "x": 220,
+        "y": 100,
+        "rotation": 0,
+        "label": "DM"
+      },
+      {
+        "key": "detector",
+        "x": 420,
+        "y": 100,
+        "rotation": 0,
+        "label": "ω"
+      },
+      {
+        "key": "detector",
+        "x": 220,
+        "y": -100,
+        "rotation": 270,
+        "label": "2ω",
+        "label_offset": [
+          60,
+          60
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "start": 0,
+        "start_port": 0,
+        "end": 1,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 1,
+        "start_port": 1,
+        "end": 2,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 2,
+        "start_port": 1,
+        "end": 3,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 3,
+        "start_port": 1,
+        "end": 4,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 4,
+        "start_port": 1,
+        "end": 5,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 4,
+        "start_port": 2,
+        "end": 6,
+        "end_port": 0,
+        "route": "straight"
+      }
+    ]
+  },
+  "spdc": {
+    "title": "Noncollinear SPDC source",
+    "nodes": [
+      {
+        "key": "laser",
+        "x": -360,
+        "y": 0,
+        "rotation": 0,
+        "label": "Pump"
+      },
+      {
+        "key": "half_wave_plate",
+        "x": -200,
+        "y": 0,
+        "rotation": 0
+      },
+      {
+        "key": "lens",
+        "x": -40,
+        "y": 0,
+        "rotation": 0,
+        "label": "L"
+      },
+      {
+        "key": "crystal_noncollinear",
+        "x": 120,
+        "y": 0,
+        "rotation": 0,
+        "label": "χ⁽²⁾"
+      },
+      {
+        "key": "detector",
+        "x": 360,
+        "y": -120,
+        "rotation": -26.56505117707799,
+        "label": "Signal"
+      },
+      {
+        "key": "detector",
+        "x": 360,
+        "y": 120,
+        "rotation": 26.56505117707799,
+        "label": "Idler"
+      }
+    ],
+    "edges": [
+      {
+        "start": 0,
+        "start_port": 0,
+        "end": 1,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 1,
+        "start_port": 1,
+        "end": 2,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 2,
+        "start_port": 1,
+        "end": 3,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 3,
+        "start_port": 1,
+        "end": 4,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 3,
+        "start_port": 2,
+        "end": 5,
+        "end_port": 0,
+        "route": "straight"
+      }
+    ]
+  },
+  "spatial_filter": {
+    "title": "Spatial filter / 4f relay",
+    "nodes": [
+      {
+        "key": "lens",
+        "x": -160,
+        "y": 0,
+        "rotation": 0,
+        "label": "L1"
+      },
+      {
+        "key": "pinhole",
+        "x": 0,
+        "y": 0,
+        "rotation": 0
+      },
+      {
+        "key": "lens",
+        "x": 160,
+        "y": 0,
+        "rotation": 0,
+        "label": "L2"
+      }
+    ],
+    "edges": [
+      {
+        "start": 0,
+        "start_port": 1,
+        "end": 1,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 1,
+        "start_port": 1,
+        "end": 2,
+        "end_port": 0,
+        "route": "straight"
+      }
+    ]
+  },
+  "polarization_analyzer": {
+    "title": "Polarization preparation / analysis",
+    "nodes": [
+      {
+        "key": "half_wave_plate",
+        "x": -260,
+        "y": 80,
+        "rotation": 0
+      },
+      {
+        "key": "quarter_wave_plate",
+        "x": -100,
+        "y": 80,
+        "rotation": 0
+      },
+      {
+        "key": "pbs_3",
+        "x": 60,
+        "y": 80,
+        "rotation": 0
+      },
+      {
+        "key": "detector",
+        "x": 260,
+        "y": 80,
+        "rotation": 0,
+        "label": "PD1"
+      },
+      {
+        "key": "detector",
+        "x": 60,
+        "y": -100,
+        "rotation": 270,
+        "label": "PD2",
+        "label_offset": [
+          60,
+          60
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "start": 0,
+        "start_port": 1,
+        "end": 1,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 1,
+        "start_port": 1,
+        "end": 2,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 2,
+        "start_port": 1,
+        "end": 3,
+        "end_port": 0,
+        "route": "straight"
+      },
+      {
+        "start": 2,
+        "start_port": 2,
+        "end": 4,
+        "end_port": 0,
+        "route": "straight"
+      }
+    ]
+  }
+}

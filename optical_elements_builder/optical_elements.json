@@ -1,0 +1,886 @@
+{
+  "Sources and detection": {
+    "laser": [
+      "Laser",
+      "M-2,-1 H1 V1 H-2 Z M1,0 H2 M-1.6,0 H0.6",
+      [
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "lamp": [
+      "Broadband source",
+      "M1,0 A1,1 0 1 0 -1,0 A1,1 0 1 0 1,0 M-.7,-.7 L.7,.7 M-.7,.7 L.7,-.7 M1,0 H2",
+      [
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "detector": [
+      "Photodetector",
+      "M-2,0 H-1 M-1,-1 H0 A1,1 0 0 1 0,1 H-1 Z",
+      [
+        [
+          -2,
+          0
+        ]
+      ]
+    ],
+    "camera": [
+      "Camera / CCD / CMOS",
+      "M-2,0 H-1 M-1,-1.4 H1.4 V1.4 H-1 Z M-.2,-1.4 V1.4 M.6,-1.4 V1.4 M-1,-.5 H1.4 M-1,.5 H1.4",
+      [
+        [
+          -2,
+          0
+        ]
+      ]
+    ],
+    "power_meter": [
+      "Optical power meter",
+      "M-2,0 H-1 M1,0 A1,1 0 1 0 -1,0 A1,1 0 1 0 1,0 M-.5,.5 L.5,-.5 M.1,-.5 H.5 V-.1",
+      [
+        [
+          -2,
+          0
+        ]
+      ]
+    ],
+    "screen": [
+      "Viewing screen",
+      "M0,-2 V2 M0,-1.6 L.45,-1.15 M0,-.8 L.45,-.35 M0,0 L.45,.45 M0,.8 L.45,1.25",
+      [
+        [
+          0,
+          0
+        ]
+      ]
+    ],
+    "beam_dump": [
+      "Beam dump",
+      "M-2,0 H-1 M-1,-1 H1 V1 H-1 Z M-1,-1 L1,1 M-1,0 L0,1 M0,-1 L1,0",
+      [
+        [
+          -2,
+          0
+        ]
+      ]
+    ]
+  },
+  "Mirrors and beam splitters": {
+    "mirror": [
+      "Mirror at 45°",
+      "M-1,1 L1,-1 M-0.65,1.15 L1.15,-0.65",
+      [
+        [
+          0,
+          0
+        ]
+      ]
+    ],
+    "mirror_plane": [
+      "Plane mirror",
+      "M0,-2 V2 M.2,-2 V2 M.2,-1.6 L.6,-1.2 M.2,-.6 L.6,-.2 M.2,.4 L.6,.8 M.2,1.4 L.6,1.8",
+      [
+        [
+          0,
+          0
+        ]
+      ]
+    ],
+    "mirror_concave": [
+      "Concave mirror",
+      "M-.5,-2 Q.5,0 -.5,2 M-.3,-2 Q.7,0 -.3,2",
+      [
+        [
+          0,
+          0
+        ]
+      ]
+    ],
+    "mirror_convex": [
+      "Convex mirror",
+      "M.5,-2 Q-.5,0 .5,2 M.7,-2 Q-.3,0 .7,2",
+      [
+        [
+          0,
+          0
+        ]
+      ]
+    ],
+    "mirror_pzt": [
+      "Piezo mirror",
+      "M-1,1 L1,-1 M-.65,1.15 L1.15,-.65 M.4,.5 L.9,1 L1.4,.5 L.9,0 Z",
+      [
+        [
+          0,
+          0
+        ]
+      ]
+    ],
+    "output_coupler": [
+      "Output coupler",
+      "M-.12,-2 V2 M.12,-2 V2 M-2,0 H-.12 M.12,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "cavity_coupler": [
+      "Cavity coupling mirror",
+      "M-.12,-2 V2 M.12,-2 V2",
+      [
+        [
+          0,
+          0
+        ]
+      ]
+    ],
+    "beam_splitter": [
+      "Beam splitter · 4 ports",
+      "M-1,-1 H1 V1 H-1 Z M-1,1 L1,-1 M-2,0 H-1 M1,0 H2 M0,-2 V-1 M0,1 V2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    ],
+    "beam_splitter_3": [
+      "Beam splitter · 3 ports",
+      "M-1,-1 H1 V1 H-1 Z M-1,1 L1,-1 M-2,0 H-1 M1,0 H2 M0,-2 V-1",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          -2
+        ]
+      ]
+    ],
+    "plate_splitter": [
+      "Plate beam splitter · 3 ports",
+      "M-1.4,1.4 L1.4,-1.4 M-2,0 H-.2 M.2,0 H2 M0,-2 V-.2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          -2
+        ]
+      ]
+    ],
+    "dichroic": [
+      "Dichroic mirror · 3 ports",
+      "M-1.4,1.4 L1.4,-1.4 M-1.15,1.55 L1.55,-1.15 M-2,0 H-.2 M.4,0 H2 M0,-2 V-.2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          -2
+        ]
+      ]
+    ]
+  },
+  "Lenses and focusing": {
+    "lens": [
+      "Converging lens",
+      "M-2,0 H-0.45 M0.45,0 H2 M0,-2 Q-0.9,0 0,2 Q0.9,0 0,-2 Z",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "lens_diverging": [
+      "Diverging lens",
+      "M-.7,-2 Q.2,0 -.7,2 H.7 Q-.2,0 .7,-2 Z M-2,0 H-.25 M.25,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "lens_plano_convex": [
+      "Plano-convex lens",
+      "M0,-2 V2 Q1.3,0 0,-2 Z M-2,0 H0 M.65,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "lens_plano_concave": [
+      "Plano-concave lens",
+      "M-.6,-2 V2 H.7 Q-.2,0 .7,-2 Z M-2,0 H-.6 M.25,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "lens_meniscus": [
+      "Meniscus lens",
+      "M-.4,-2 Q1.4,0 -.4,2 Q.3,0 -.4,-2 Z M-2,0 H-.05 M.5,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "lens_cylindrical": [
+      "Cylindrical lens",
+      "M-.5,-1.7 H.5 Q1,0 .5,1.7 H-.5 Z M-2,0 H-.5 M.75,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "lens_aspheric": [
+      "Aspheric lens",
+      "M0,-2 V2 C1.2,1.6 1.2,-1.6 0,-2 Z M-2,0 H0 M.9,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "objective": [
+      "Microscope objective",
+      "M-1.2,-1.2 H.4 L1.2,-.6 V.6 L.4,1.2 H-1.2 Z M-.6,-1.2 V1.2 M0,-1.2 V1.2 M-2,0 H-1.2 M1.2,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "axicon": [
+      "Axicon",
+      "M-.4,-2 V2 L.8,0 Z M-2,0 H-.4 M.8,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ]
+  },
+  "Polarization": {
+    "polarizer": [
+      "Linear polarizer",
+      "M-1,-1 H1 V1 H-1 Z M-0.55,0.65 L0.55,-0.65 M-2,0 H-1 M1,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "half_wave_plate": [
+      "Half-wave plate",
+      "M-.22,-1.7 H.22 V1.7 H-.22 Z M-2,0 H-.22 M.22,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "quarter_wave_plate": [
+      "Quarter-wave plate",
+      "M-.22,-1.7 H.22 V1.7 H-.22 Z M-2,0 H-.22 M.22,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "variable_retarder": [
+      "Variable retarder",
+      "M-1.2,-1 H1.2 V1 H-1.2 Z M-2,0 H-1.2 M1.2,0 H2 M-.8,.6 L.8,-.6 M.3,-.6 H.8 V-.1",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "pbs": [
+      "Polarizing BS · 4 ports",
+      "M-1,-1 H1 V1 H-1 Z M-1,1 L1,-1 M-2,0 H-1 M1,0 H2 M0,-2 V-1 M0,1 V2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          -2
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    ],
+    "pbs_3": [
+      "Polarizing BS · 3 ports",
+      "M-1,-1 H1 V1 H-1 Z M-1,1 L1,-1 M-2,0 H-1 M1,0 H2 M0,-2 V-1",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          -2
+        ]
+      ]
+    ],
+    "glan_thompson": [
+      "Glan–Thompson polarizer",
+      "M-1.2,-1 H1.2 V1 H-1.2 Z M-2,0 H-1.2 M1.2,0 H2 M-.5,1 L.5,-1 M-.3,1 L.7,-1",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "wollaston": [
+      "Wollaston prism",
+      "M-1,-1 H1 V1 H-1 Z M-.5,1 L.5,-1 M-2,0 H-1 M1,-.5 L2,-1 M1,.5 L2,1",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    ],
+    "faraday_rotator": [
+      "Faraday rotator",
+      "M-1.2,-1 H1.2 V1 H-1.2 Z M-2,0 H-1.2 M1.2,0 H2 M0,-.6 A.6,.6 0 1 0 .6,0 M.3,.3 L.6,0 L.9,.3",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "isolator": [
+      "Optical isolator",
+      "M-1.2,-1 H1.2 V1 H-1.2 Z M-2,0 H-1.2 M1.2,0 H2 M-.8,0 H.7 M.3,-.4 L.7,0 L.3,.4",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ]
+  },
+  "Apertures and filters": {
+    "pinhole": [
+      "Pinhole",
+      "M0,-2 V-.2 M0,.2 V2 M-.2,-2 V-.2 M-.2,.2 V2 M-2,0 H-.3 M.3,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "iris": [
+      "Variable iris",
+      "M0,-2 V-.5 M0,.5 V2 M-.2,-2 V-.5 M-.2,.5 V2 M-.8,-1 L.8,-2 M.3,-2 H.8 V-1.5 M-2,0 H-.3 M.3,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "slit": [
+      "Slit aperture",
+      "M-.2,-2 V-.6 H.2 V-2 M-.2,2 V.6 H.2 V2 M-2,0 H-.3 M.3,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "nd_filter": [
+      "Neutral-density filter",
+      "M-.22,-1.7 H.22 V1.7 H-.22 Z M-2,0 H-.22 M.22,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "bandpass": [
+      "Band-pass filter",
+      "M-.22,-1.7 H.22 V1.7 H-.22 Z M-2,0 H-.22 M.22,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "longpass": [
+      "Long-pass filter",
+      "M-.22,-1.7 H.22 V1.7 H-.22 Z M-2,0 H-.22 M.22,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "shortpass": [
+      "Short-pass filter",
+      "M-.22,-1.7 H.22 V1.7 H-.22 Z M-2,0 H-.22 M.22,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "shutter": [
+      "Mechanical shutter",
+      "M-2,0 H-.7 M.7,0 H2 M-.5,1.2 L.8,-1.2 M-.7,1.2 A.2,.2 0 1 0 -.3,1.2 A.2,.2 0 1 0 -.7,1.2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "etalon": [
+      "Fabry–Pérot etalon",
+      "M-.5,-1.8 V1.8 M.5,-1.8 V1.8 M-2,0 H-.5 M.5,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ]
+  },
+  "Prisms and diffraction": {
+    "prism": [
+      "Dispersive prism",
+      "M0,-1.8 L1.5,1.2 H-1.5 Z M-2,0 H-1 M1,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "right_angle_prism": [
+      "Right-angle prism",
+      "M-1.4,-1.4 H1.4 L-1.4,1.4 Z M-2,0 H-1.4 M0,-2 V-1.4",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          0,
+          -2
+        ]
+      ]
+    ],
+    "dove_prism": [
+      "Dove prism",
+      "M-1.7,1 L-.7,-1 H.7 L1.7,1 Z M-2,0 H-1.2 M1.2,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "grating": [
+      "Reflection grating",
+      "M0,-2 V2 M0,-1.8 L.4,-1.4 M0,-1.2 L.4,-.8 M0,-.6 L.4,-.2 M0,0 L.4,.4 M0,.6 L.4,1 M0,1.2 L.4,1.6",
+      [
+        [
+          0,
+          0
+        ]
+      ]
+    ],
+    "transmission_grating": [
+      "Transmission grating",
+      "M-1.2,-1 H1.2 V1 H-1.2 Z M-2,0 H-1.2 M1.2,0 H2 M-.8,-1 V1 M-.4,-1 V1 M0,-1 V1 M.4,-1 V1 M.8,-1 V1",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "slm": [
+      "Spatial light modulator",
+      "M-1.2,-1 H1.2 V1 H-1.2 Z M-2,0 H-1.2 M1.2,0 H2 M-.4,-1 V1 M.4,-1 V1 M-1.2,-.3 H1.2 M-1.2,.3 H1.2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ]
+  },
+  "Nonlinear and active media": {
+    "crystal": [
+      "Second-order nonlinear crystal",
+      "M-1.2,-1 H1.2 V1 H-1.2 Z M-2,0 H-1.2 M1.2,0 H2 M-.6,.6 L.6,-.6 M.2,-.6 H.6 V-.2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "crystal_noncollinear": [
+      "Noncollinear nonlinear crystal",
+      "M-1.2,-1 H1.2 V1 H-1.2 Z M-2,0 H-1.2 M1.2,-.4 L2,-1 M1.2,.4 L2,1",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    ],
+    "periodically_poled": [
+      "Periodically poled LiNbO₃",
+      "M-1.2,-1 H1.2 V1 H-1.2 Z M-2,0 H-1.2 M1.2,0 H2 M-.8,-1 V1 M-.4,-1 V1 M0,-1 V1 M.4,-1 V1 M.8,-1 V1",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "kerr_medium": [
+      "Third-order nonlinear medium",
+      "M-1.2,-1 H1.2 V1 H-1.2 Z M-2,0 H-1.2 M1.2,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "gain_medium": [
+      "Laser gain medium",
+      "M-1.2,-1 H1.2 V1 H-1.2 Z M-2,0 H-1.2 M1.2,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "saturable_absorber": [
+      "Saturable absorber",
+      "M-1.2,-1 H1.2 V1 H-1.2 Z M-2,0 H-1.2 M1.2,0 H2",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "aom": [
+      "Acousto-optic modulator",
+      "M-1.2,-1 H1.2 V1 H-1.2 Z M-.6,-1 V-1.5 H.6 V-1 M-2,0 H-1.2 M1.2,0 H2 M1.2,-.5 L2,-1",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          -1
+        ]
+      ]
+    ],
+    "eom": [
+      "Electro-optic modulator",
+      "M-1.2,-1 H1.2 V1 H-1.2 Z M-2,0 H-1.2 M1.2,0 H2 M-.8,-1.35 H.8 M-.8,1.35 H.8",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "pockels_cell": [
+      "Pockels cell",
+      "M-1.2,-1 H1.2 V1 H-1.2 Z M-2,0 H-1.2 M1.2,0 H2 M-.8,-1.35 H.8 M-.8,1.35 H.8",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "phase_modulator": [
+      "Phase modulator",
+      "M-1.2,-1 H1.2 V1 H-1.2 Z M-2,0 H-1.2 M1.2,0 H2 M-.8,-1.35 H.8 M-.8,1.35 H.8",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "gas_cell": [
+      "Gas / vapor cell",
+      "M-1.2,-1 H1.2 V1 H-1.2 Z M-2,0 H-1.2 M1.2,0 H2 M-.85,-1 V1 M.85,-1 V1",
+      [
+        [
+          -2,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ]
+  }
+}

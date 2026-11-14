@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software in research, you may cite it using this metadata."
+type: software
+title: "Inkscape Optical Elements"
+version: "0.6.0"
+authors:
+  - family-names: "Rodríguez Lara"
+    given-names: "Blas Manuel"
+license: MIT
+abstract: "An Inkscape extension for drawing editable free-space optical schematics with a drag-and-drop gallery, grid snapping, attached connections, and automatic symbol alignment."
+keywords:
+  - Inkscape
+  - free-space optics
+  - optical schematics
